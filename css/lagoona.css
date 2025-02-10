@@ -72,7 +72,7 @@ body {
 /*glob*/
 
 .container {
-    width: 1170px;
+    max-width: 1170px;
     padding: 0;
     margin: 0 auto;
 }
@@ -80,11 +80,12 @@ body {
 .title {
     display: inline-block;
     margin: 0;
-    margin-bottom: 20px;
-    margin-left: 40px;
+    margin-bottom: 19px;
+    margin-left: 41px;
     font-size: 40px;
     line-height: 40px;
     font-weight: 400;
+    color: #333333;
 }
 
 .price_offers {
@@ -95,7 +96,7 @@ body {
 .section_offset {
     margin: 0;
     padding: 0;
-    margin-bottom: 70px;
+    margin-bottom: 71px;
 }
 /*header*/
 .header_link {
@@ -219,11 +220,11 @@ body {
 }
 
 .card_right:not(:last-child) {
-    margin-bottom: 23px;
+    margin-bottom: 24px;
 }
 
 .card_one_img {
-    background-image: url(../img/мальд.png)
+    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/мальд.png);
 }
 
 .card_right {
@@ -236,7 +237,7 @@ body {
 }
 
 .card_two_img {
-    background-image: url(../img/крит.png);
+    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/крит.png);
 }
 
 .card_three_img {
@@ -253,19 +254,23 @@ body {
 }
     
 .title_card_special_offers {
-    max-width: 350px;
     font-size: 40px;
     font-weight: 700;
     line-height: 40px;
     color: #FFF;
     margin: 0;
-    padding-top: 40px;
+    padding-top: 41px;
     margin-bottom: 15px;
 }
 
+.title_card_special_offers_one {
+    max-width: 350px;
+}
+
+
 .title_card_special_offers_big {
     margin: 0;
-    padding-top: 211px;
+    padding-top: 214px;
     max-width: 299px;
     font-size: 60px;
     line-height: 60px;
@@ -276,27 +281,38 @@ body {
 
 .price_offers {
     margin: 0;
-    margin-bottom: 47px;
+    margin-bottom: 46px;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
     color: #FFF;
-    opacity: .8;
+    opacity: 0.6;
+}
+
+.price_offers_big {
+    margin: 0;
+    margin-bottom: 45px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FFF;
+    opacity: 0.8;
 }
 
 .padd_card {
-    padding-left: 40px;
+    padding-left: 45px;
 }
 
 .link_special_off {
-    padding-left: 40px;
+    margin-left: 45px;
     font-size: 16px;
     line-height: 16px;
     font-weight: 400;
     color: #FFCC66;
+    opacity: 0.7;
     background-position: right center;
     background-repeat: no-repeat;
-    padding-right: 15px;
+    padding-right: 16px;
 }
 
 .link_special_off_img {
