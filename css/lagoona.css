@@ -9,7 +9,7 @@ html {
 }
 
 @font-face {
-    font-family: 'Muller Bold';
+    font-family: 'Muller';
     src: local('Muller Bold'), url(../fonts/MullerBold.woff2) format('woff2'), url(../fonts/MullerBold.woff) format("woff");
     font-weight: 700;
     font-style: normal;
@@ -17,7 +17,7 @@ html {
 }
 
 @font-face {
-    font-family: 'Muller Light';
+    font-family: 'Muller';
     src: local('Muller Light'), url(../fonts/MullerLight.woff2) format("woff2"), url(../fonts/MullerLight.woff) format("woff");
     font-weight: 100;
     font-style: normal;
@@ -25,14 +25,14 @@ html {
 }
 
 @font-face {
-    font-family: 'Muller Medium';
+    font-family: 'Muller';
     src: local('Muller Medium'), url(../fonts/MullerMedium.woff2) format("woff2"), url(../fonts/MullerMedium.woff) format("woff");
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Muller Regular';
+    font-family: 'Muller';
     src: local('Muller Regular'), url(../fonts/MullerRegular.woff2) format("woff2"), url(../fonts/MullerRegular.woff) format("woff");
     font-weight: 400;
     font-style: normal;
@@ -49,9 +49,9 @@ img {
 }
 
 body {
-    min-width: 1200px;
-    font-family: 'Muller Regular', sans-serif;
-    background-color: rgb(229, 229, 229);
+    min-width: 1170px;
+    font-family: 'Muller', sans-serif;
+    background-color: #F1F1F1;
 }
 /*glob*/
 .list_reset {
@@ -72,7 +72,7 @@ body {
 /*glob*/
 
 .container {
-    width: 1200px;
+    width: 1170px;
     padding: 0;
     margin: 0 auto;
 }
@@ -99,16 +99,19 @@ body {
 }
 /*header*/
 .header_link {
+    max-width: 1170px;
+    min-height: 54px;
     padding-top: 30px;
     margin: 0;
     margin-bottom: 30px;
     align-items: center;
 }
-/*
+
 .header_logo {
-    margin-right: auto;
+    max-height: 54px;
+    margin: 0;
 }
-*/
+
 .link {
     font-weight: 400;
     font-size: 16px;
@@ -116,7 +119,7 @@ body {
     color: #CC9933;
     background-position: left center;
     background-repeat: no-repeat;
-    padding-left: 30px;
+    padding-left: 28px;
 }
 
 .link_img {
@@ -137,27 +140,44 @@ body {
     border-radius: 15px;
 }
 
+.container_nav {
+    min-width: 800px;
+}
+
 .navigation {
-    width: 1200px;
+    max-width: 1200px; width: 100%;
     flex-wrap: nowrap;
     align-items: center;
 }
 
 .header_list_nav {
-    padding-left: 45px;
+    width: 100%; 
+    justify-content: space-between; 
+    display: flex;
+    margin-left: 46px; 
+    margin-right: 113px;
 }
 
 .item_nav {
-    margin-right: 45px;
+    justify-content: space-between;
+}
+
+.item_nav_link {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #666666;
 }
 
 .nav_btn {
-    padding-left: 52px;
+    margin-left: auto; 
+    margin-right: 45px; 
+    display: flex;
+    align-items: center;
+    justify-content: end;
     margin-top: 10px;
     margin-bottom: 10px;
     min-height: 50px;
-    border-left: 1px solid #E1E1E1;
-    align-items: center;
 }
 
 .btn_y {
@@ -177,6 +197,7 @@ body {
     border-radius: 10px;
     border-color: #CC9933;
     font-size: 16px;
+    line-height: 16px;
     font-weight: 400;
     color: #CC9933;
     cursor: pointer;
