@@ -403,10 +403,11 @@ body {
 }
 
 .item_advantages {
-    max-width: 275px;
+    max-width: 276px;
+    max-height: 276px;
     border-radius: 15px;
     background-color: #FFF;
-    background-size: 65px 65px;
+    background-size: 64px 66px;
     background-repeat: no-repeat;
     background-position: left top;
 }
@@ -414,8 +415,6 @@ body {
 .card_advantages {
     display: inline-block;
     position: absolute;
-    width: 65px;
-    height: 65px;
     margin-top: 40px;
     margin-left: 45px;
     background-repeat: no-repeat;
@@ -425,34 +424,50 @@ body {
 
 .img_advantages1 {
     background-image: url(../img/bathtub1.svg);
+    width: 64px;
+    height: 66px;
 }
 
 .img_advantages2 {
     background-image: url(../img/hanger2.svg);
+    width: 67px;
+    height: 66px;
 }
 
 .img_advantages3 {
     background-image: url(../img/heating3.svg);
+    width: 64px;
+    height: 66px;
 }
 
 .img_advantages4 {
     background-image: url(../img/hotel-key4.svg);
+    width: 66px;
+    height: 66px;
 }
 
 .img_advantages5 {
     background-image: url(../img/parking5.svg);
+    width: 66px;
+    height: 66px;
 }
 
 .img_advantages6 {
     background-image: url(../img/reception6.svg);
+    width: 64px;
+    height: 66px;
 }
 
 .img_advantages7 {
     background-image: url(../img/security-box7.svg);
+    width: 67px;
+    height: 66px;
 }
 
 .img_advantages8 {
     background-image: url(../img/swimming-pool8.svg);
+    width: 64px;
+    height: 66px;    
 }
 
 .advan-tables:not(:nth-child(4n)) {
@@ -464,10 +479,10 @@ body {
 }
 
 .paragraph_advantages {
-    min-width: 188px;
+    min-width: 276px;
     margin: 0;
     padding-left: 45px;
-    padding-right: 43px;
+    padding-right: 42px;
     margin-bottom: 40px;
     padding-top: 116px;
     font-size: 16px;
