@@ -492,12 +492,14 @@ body {
 
 /*разм*/
 .list_placement {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .item_placement {
     margin: 0;
-    min-width: 374px;
+    max-width: 374px;
     min-height: 440px;
     border-radius: 15px;
     flex-direction: column;
@@ -505,18 +507,18 @@ body {
     overflow: hidden;
 }
 
-.item_placement:not(:nth-child(3n)) {
-    margin-right: 23px;
+.item_placement:not(:nth-last-child(-n+3)) {
+    margin-bottom: 24px;
 }
 
-.item_placement:not(:nth-last-child(-n+3)) {
-    margin-bottom: 23px;
+.img_star:not(:last-child) {
+    margin-right: 2px;
 }
 
 .placement_card {
     width: 374px;
     height: 217px;
-    margin-bottom: 36px;
+    margin-bottom: 33px;
 }   
 
 .img_placement {
@@ -526,16 +528,18 @@ body {
 }
 
 .price_placement {
+    justify-content: space-between;
+    max-width: 284px;
     align-items: baseline;
-    justify-content: space-around;
-    margin-bottom: 16px;
+    margin: 0 45px 15px;
 }
 
 .price {
+    margin: 0;
     font-size: 16px;
     line-height: 16px;
     font-weight: 400;
-    margin: 0;
+    color: #999999;
 }
 
 .title_card_plecement {
@@ -546,20 +550,27 @@ body {
     margin: 0;
     padding: 0;
     padding-left: 45px;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
+}
+
+.price_text {
+    color: #000000;
 }
 
 .price_text_strong {
+    margin: 0;
+    padding-right: 6px;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
+    color: #000000;
 }
 
 .paragraph_plecement_card {
     margin: 0;
     padding: 0;
     padding-left: 45px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     color: #999999;
 }
 
@@ -575,7 +586,7 @@ body {
     padding: 0;
     margin: 0;
     min-height: 440px;
-    min-width: 372px;
+    min-width: 374px;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -599,7 +610,7 @@ body {
     line-height: 40px;
     background-position: right center;
     background-repeat: no-repeat;
-    padding-right: 15px;
+    padding-right: 18px;
 }
 
 .background_img_placement {
