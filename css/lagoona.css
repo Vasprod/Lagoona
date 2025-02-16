@@ -80,8 +80,7 @@ body {
 .title {
     display: inline-block;
     margin: 0;
-    margin-bottom: 19px;
-    margin-left: 41px;
+    margin-bottom: 20px;
     font-size: 40px;
     line-height: 40px;
     font-weight: 400;
@@ -626,55 +625,57 @@ body {
 .flex_form {
     width: 100%;
     flex-direction: column;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
 .container_form {
-    width: 1200px;
+    width: 1170px;
     min-height: 274px;
     margin: 0 auto;
     border-radius: 15px;
     background: #E9E9E9;
-}
-
-.form_title {
-    padding-top: 40px;
-    margin-bottom: 20px;
+    padding: 45px 45px;
 }
 
 .background_white_form {
     margin: 0 auto;
-    margin-bottom: 71px;
     max-width: 1110px;
     min-height: 110px;
     background-color: #FFFFFF;
     border-radius: 15px;
+    padding: 31px 28px;
 }
 
-.block_form {
-    margin-top: 30px;
-    max-height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+.form_tours{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 41px;
 }
-  
-.block_form:first-child {
-    padding-left: 0;
-    margin-left: 30px;
+
+.block_form1 {
+    max-width: 121px;
 }
-  
-.block_form:last-child {
-    padding-left: 0;
-    margin-right: 30px;
+.block_form{
+    max-width: 169px;
 }
+
 
 .p_form {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     font-size: 12px;
     font-weight: 400;
+
     line-height: 12px;
+}
+
+.input_date[type=date]{
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 16px;
+    letter-spacing: 1.2px;
+    width: 124px;
 }
 
 .data_form {
@@ -700,19 +701,17 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
+    width: 121px;
 }
 
 .btn_form {
-    margin-top: 30px;
-    margin-left: 25px;
     justify-content: center;
-    min-width: 110px;
-    max-height: 50px;
+    min-width: 130px;
 }
 
 .p_btn_form {
     min-width: 110px;
-    height: 50px;
+    height: 45px;
     text-align: center;
 }
 
