@@ -827,8 +827,13 @@ body {
 }
 
 /*футер*/
+.contacts {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
 .footer_container {
-    min-width: 1200px;
+    min-width: 1170px;
     max-height: 341px;
     flex-direction: column;
     flex-wrap: wrap;
@@ -918,10 +923,10 @@ body {
     flex-direction: column;
     margin-left: auto;
     margin-top: 45px;
-    margin-right: 45px;
+    margin-right: 44px;
     
 }
 
 .item_cont:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
