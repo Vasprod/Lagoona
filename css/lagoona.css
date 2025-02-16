@@ -9,7 +9,7 @@ html {
 }
 
 @font-face {
-    font-family: 'Muller Bold';
+    font-family: 'Muller';
     src: local('Muller Bold'), url(../fonts/MullerBold.woff2) format('woff2'), url(../fonts/MullerBold.woff) format("woff");
     font-weight: 700;
     font-style: normal;
@@ -17,7 +17,7 @@ html {
 }
 
 @font-face {
-    font-family: 'Muller Light';
+    font-family: 'Muller';
     src: local('Muller Light'), url(../fonts/MullerLight.woff2) format("woff2"), url(../fonts/MullerLight.woff) format("woff");
     font-weight: 100;
     font-style: normal;
@@ -25,14 +25,14 @@ html {
 }
 
 @font-face {
-    font-family: 'Muller Medium';
+    font-family: 'Muller';
     src: local('Muller Medium'), url(../fonts/MullerMedium.woff2) format("woff2"), url(../fonts/MullerMedium.woff) format("woff");
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Muller Regular';
+    font-family: 'Muller';
     src: local('Muller Regular'), url(../fonts/MullerRegular.woff2) format("woff2"), url(../fonts/MullerRegular.woff) format("woff");
     font-weight: 400;
     font-style: normal;
@@ -49,9 +49,9 @@ img {
 }
 
 body {
-    min-width: 1200px;
-    font-family: 'Muller Regular', sans-serif;
-    background-color: rgb(229, 229, 229);
+    min-width: 1170px;
+    font-family: 'Muller', sans-serif;
+    background-color: #F1F1F1;
 }
 /*glob*/
 .list_reset {
@@ -72,7 +72,7 @@ body {
 /*glob*/
 
 .container {
-    width: 1200px;
+    max-width: 1170px;
     padding: 0;
     margin: 0 auto;
 }
@@ -84,6 +84,7 @@ body {
     font-size: 40px;
     line-height: 40px;
     font-weight: 400;
+    color: #333333;
 }
 
 .price_offers {
@@ -94,20 +95,23 @@ body {
 .section_offset {
     margin: 0;
     padding: 0;
-    margin-bottom: 70px;
+    margin-bottom: 71px;
 }
 /*header*/
 .header_link {
+    max-width: 1170px;
+    min-height: 54px;
     padding-top: 30px;
     margin: 0;
     margin-bottom: 30px;
     align-items: center;
 }
-/*
+
 .header_logo {
-    margin-right: auto;
+    max-height: 54px;
+    margin: 0;
 }
-*/
+
 .link {
     font-weight: 400;
     font-size: 16px;
@@ -115,7 +119,7 @@ body {
     color: #CC9933;
     background-position: left center;
     background-repeat: no-repeat;
-    padding-left: 30px;
+    padding-left: 28px;
 }
 
 .link_img {
@@ -136,27 +140,44 @@ body {
     border-radius: 15px;
 }
 
+.container_nav {
+    min-width: 800px;
+}
+
 .navigation {
-    width: 1200px;
+    max-width: 1200px; width: 100%;
     flex-wrap: nowrap;
     align-items: center;
 }
 
 .header_list_nav {
-    padding-left: 45px;
+    width: 100%; 
+    justify-content: space-between; 
+    display: flex;
+    margin-left: 46px; 
+    margin-right: 113px;
 }
 
 .item_nav {
-    margin-right: 45px;
+    justify-content: space-between;
+}
+
+.item_nav_link {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #666666;
 }
 
 .nav_btn {
-    padding-left: 52px;
+    margin-left: auto; 
+    margin-right: 45px; 
+    display: flex;
+    align-items: center;
+    justify-content: end;
     margin-top: 10px;
     margin-bottom: 10px;
     min-height: 50px;
-    border-left: 1px solid #E1E1E1;
-    align-items: center;
 }
 
 .btn_y {
@@ -176,6 +197,7 @@ body {
     border-radius: 10px;
     border-color: #CC9933;
     font-size: 16px;
+    line-height: 16px;
     font-weight: 400;
     color: #CC9933;
     cursor: pointer;
@@ -197,11 +219,11 @@ body {
 }
 
 .card_right:not(:last-child) {
-    margin-bottom: 23px;
+    margin-bottom: 24px;
 }
 
 .card_one_img {
-    background-image: url(../img/мальд.png)
+    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/мальд.png);
 }
 
 .card_right {
@@ -214,7 +236,7 @@ body {
 }
 
 .card_two_img {
-    background-image: url(../img/крит.png);
+    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/крит.png);
 }
 
 .card_three_img {
@@ -231,19 +253,23 @@ body {
 }
     
 .title_card_special_offers {
-    max-width: 350px;
     font-size: 40px;
     font-weight: 700;
     line-height: 40px;
     color: #FFF;
     margin: 0;
-    padding-top: 40px;
+    padding-top: 41px;
     margin-bottom: 15px;
 }
 
+.title_card_special_offers_one {
+    max-width: 350px;
+}
+
+
 .title_card_special_offers_big {
     margin: 0;
-    padding-top: 211px;
+    padding-top: 214px;
     max-width: 299px;
     font-size: 60px;
     line-height: 60px;
@@ -254,35 +280,47 @@ body {
 
 .price_offers {
     margin: 0;
-    margin-bottom: 47px;
+    margin-bottom: 46px;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
     color: #FFF;
-    opacity: .8;
+    opacity: 0.6;
+}
+
+.price_offers_big {
+    margin: 0;
+    margin-bottom: 45px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FFF;
+    opacity: 0.8;
 }
 
 .padd_card {
-    padding-left: 40px;
+    padding-left: 45px;
 }
 
 .link_special_off {
-    padding-left: 40px;
+    margin-left: 45px;
     font-size: 16px;
     line-height: 16px;
     font-weight: 400;
     color: #FFCC66;
-    background-position: right center;
-    background-repeat: no-repeat;
-    padding-right: 15px;
+    opacity: 0.7;
 }
 
 .link_special_off_img {
+    padding-right: 16px;
     background-image: url(../img/btn.png);
+    background-position: right center;
+    background-repeat: no-repeat;
 }
 
 /*о нас*/
 .p_about_as {
+    margin: 0;
     max-width: 888px;
     font-size: 16px;
     font-weight: 400;
@@ -295,8 +333,8 @@ body {
     margin-bottom: 70px;
 }
 .item_services {
-    max-width: 573px;
-    min-height: 330px;
+    min-width: 573px;
+    max-height: 330px;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
     overflow: hidden;
@@ -311,21 +349,43 @@ body {
     margin-right: 24px;
 }
 
+.img_services {
+    max-height: 165px;
+    margin-bottom: 26px;
+}
+
 .img_services_card {
     max-width: 100%;
 }
 
 .heading_card_services {
     margin: 0;
-    margin-bottom: 5px;
     padding-left: 45px
 }
 
+.link_services {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #CC9933;
+}
+
+.link_services_img {
+    padding-right: 18px;
+    background-image: url(../img/darkRectangle\ 2\ \(1\).svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
 .paragraph_services {
-    max-width: 402px;
+    display: inline-block;
+    max-width: 450px;
     margin: 0;
     margin-bottom: 35px;
     padding-left: 45px;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
 }
 
 /*преим*/
@@ -342,10 +402,11 @@ body {
 }
 
 .item_advantages {
-    max-width: 275px;
+    max-width: 276px;
+    max-height: 276px;
     border-radius: 15px;
     background-color: #FFF;
-    background-size: 65px 65px;
+    background-size: 64px 66px;
     background-repeat: no-repeat;
     background-position: left top;
 }
@@ -353,8 +414,6 @@ body {
 .card_advantages {
     display: inline-block;
     position: absolute;
-    width: 65px;
-    height: 65px;
     margin-top: 40px;
     margin-left: 45px;
     background-repeat: no-repeat;
@@ -364,34 +423,50 @@ body {
 
 .img_advantages1 {
     background-image: url(../img/bathtub1.svg);
+    width: 64px;
+    height: 66px;
 }
 
 .img_advantages2 {
     background-image: url(../img/hanger2.svg);
+    width: 67px;
+    height: 66px;
 }
 
 .img_advantages3 {
     background-image: url(../img/heating3.svg);
+    width: 64px;
+    height: 66px;
 }
 
 .img_advantages4 {
     background-image: url(../img/hotel-key4.svg);
+    width: 66px;
+    height: 66px;
 }
 
 .img_advantages5 {
     background-image: url(../img/parking5.svg);
+    width: 66px;
+    height: 66px;
 }
 
 .img_advantages6 {
     background-image: url(../img/reception6.svg);
+    width: 64px;
+    height: 66px;
 }
 
 .img_advantages7 {
     background-image: url(../img/security-box7.svg);
+    width: 67px;
+    height: 66px;
 }
 
 .img_advantages8 {
     background-image: url(../img/swimming-pool8.svg);
+    width: 64px;
+    height: 66px;    
 }
 
 .advan-tables:not(:nth-child(4n)) {
@@ -403,10 +478,10 @@ body {
 }
 
 .paragraph_advantages {
-    min-width: 188px;
+    min-width: 276px;
     margin: 0;
     padding-left: 45px;
-    padding-right: 43px;
+    padding-right: 42px;
     margin-bottom: 40px;
     padding-top: 116px;
     font-size: 16px;
@@ -416,12 +491,14 @@ body {
 
 /*разм*/
 .list_placement {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .item_placement {
     margin: 0;
-    min-width: 374px;
+    max-width: 374px;
     min-height: 440px;
     border-radius: 15px;
     flex-direction: column;
@@ -429,18 +506,18 @@ body {
     overflow: hidden;
 }
 
-.item_placement:not(:nth-child(3n)) {
-    margin-right: 23px;
+.item_placement:not(:nth-last-child(-n+3)) {
+    margin-bottom: 24px;
 }
 
-.item_placement:not(:nth-last-child(-n+3)) {
-    margin-bottom: 23px;
+.img_star:not(:last-child) {
+    margin-right: 2px;
 }
 
 .placement_card {
     width: 374px;
     height: 217px;
-    margin-bottom: 36px;
+    margin-bottom: 33px;
 }   
 
 .img_placement {
@@ -450,16 +527,18 @@ body {
 }
 
 .price_placement {
+    justify-content: space-between;
+    max-width: 284px;
     align-items: baseline;
-    justify-content: space-around;
-    margin-bottom: 16px;
+    margin: 0 45px 15px;
 }
 
 .price {
+    margin: 0;
     font-size: 16px;
     line-height: 16px;
     font-weight: 400;
-    margin: 0;
+    color: #999999;
 }
 
 .title_card_plecement {
@@ -470,20 +549,27 @@ body {
     margin: 0;
     padding: 0;
     padding-left: 45px;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
+}
+
+.price_text {
+    color: #000000;
 }
 
 .price_text_strong {
+    margin: 0;
+    padding-right: 6px;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
+    color: #000000;
 }
 
 .paragraph_plecement_card {
     margin: 0;
     padding: 0;
     padding-left: 45px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     color: #999999;
 }
 
@@ -499,7 +585,7 @@ body {
     padding: 0;
     margin: 0;
     min-height: 440px;
-    min-width: 372px;
+    min-width: 374px;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -523,7 +609,7 @@ body {
     line-height: 40px;
     background-position: right center;
     background-repeat: no-repeat;
-    padding-right: 15px;
+    padding-right: 18px;
 }
 
 .background_img_placement {
