@@ -621,6 +621,7 @@ body {
 
 .form_title {
     margin: 0;
+    padding-left: 40px;
     margin-bottom: 20px;
     color: #000000;
 }
@@ -641,11 +642,12 @@ body {
     margin: 0 auto;
     border-radius: 15px;
     background: #E9E9E9;
-    padding: 45px 45px;
+    padding: 45px 45px 45px 0;
 }
 
 .background_white_form {
     margin: 0 auto;
+    margin-left: 45px;
     max-width: 1110px;
     max-height: 106px;
     background-color: #FFFFFF;
@@ -737,7 +739,6 @@ body {
 
 .title_card_contacts {
     display: inline-block;
-    width: 100px;
     margin: 0;
     font-size: 20px;
     line-height: 20px;
@@ -766,6 +767,12 @@ body {
     margin: 0;
 }
 
+.column_numb_contacts {
+    display: inline-block;
+    max-width: 151px;
+    margin-right: 79px;
+}
+
 .numb {
     min-width: 375px;
     max-height: 97px;
@@ -782,8 +789,23 @@ body {
 
 .email {
     padding-top: 25px;
-    padding-bottom: 22px;
+    padding-bottom: 19px;
     min-height: 147px;
+}
+
+.email_link_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 3px;
+}
+
+.email_link {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    margin-right: 7px;
 }
 
 .link_contacts {
@@ -835,9 +857,9 @@ body {
 .footer_container {
     min-width: 1170px;
     max-height: 341px;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: flex-start;
     margin-bottom: 40px;
     background-color: #333333;
@@ -845,6 +867,14 @@ body {
     background-repeat: no-repeat;
     background-position: bottom right 177px;
     border-radius: 15px;
+}
+
+.footer_column1 {
+    margin-right: 125px;
+}
+
+.footer_column2 {
+    margin-right: 271px;
 }
 
 .card1_footer {
@@ -861,6 +891,7 @@ body {
     line-height: 30px;
     font-weight: 400;
     color: #FFFFFF;
+    opacity: 0.9;
 }
 
 .card_link {
@@ -919,14 +950,14 @@ body {
 
 .items_footer {
     min-width: 25px;
-    min-height: 115px;
+    min-height: 120px;
     flex-direction: column;
-    margin-left: auto;
+    justify-content: space-between;
     margin-top: 45px;
     margin-right: 44px;
     
 }
 
-.item_cont:not(:last-child) {
+/* .item_cont:not(:last-child) {
     margin-bottom: 15px;
-}
+} */
