@@ -40,10 +40,12 @@ html {
 }
 
 :root {
+    --size-block-base: 1170px;
     --color-primary: transparent;
     --color-hover: #CC9933;
     --color-focus: #CC9933;
     --color-active: #A47312;
+    --color-body: #F1F1F1;
     --text-color-white: #FFFFFF;
     --text-color-yellow: #F0BF5F; 
     --text-color-gray: #333333;
@@ -55,6 +57,14 @@ html {
     --font-size-base: 16px;
     --font-size-min-title: 20px;
     --font-size-title: 40px;
+    --line-height-base: 16px;
+    --line-height-link: 20px;
+    --line-height-card: 30px;
+    --line-height-title: 40px;
+    --font-weight-light: 100;
+    --font-weight-base: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
 }
 
 .btn:hover {
@@ -82,9 +92,9 @@ img {
 }
 
 body {
-    min-width: 1170px;
+    min-width: var(--size-block-base);
     font-family: 'Muller', sans-serif;
-    background-color: #F1F1F1;
+    background-color: var(--color-body);
 }
 /*glob*/
 .list_reset {
@@ -105,7 +115,7 @@ body {
 /*glob*/
 
 .container {
-    max-width: 1170px;
+    max-width: var(--size-block-base);
     padding: 0;
     margin: 0 auto;
 }
@@ -116,8 +126,8 @@ body {
     margin-bottom: 19px;
     margin-left: 40px;
     font-size: var(--font-size-title);
-    line-height: 40px;
-    font-weight: 400;
+    line-height: var(--line-height-title);
+    font-weight: var(--font-weight-base);
     color: var(--text-color-gray)
 }
 
@@ -133,7 +143,7 @@ body {
 }
 /*header*/
 .header_link {
-    max-width: 1170px;
+    max-width: var(--size-block-base);
     min-height: 54px;
     padding-top: 30px;
     margin: 0;
@@ -147,9 +157,9 @@ body {
 }
 
 .link {
-    font-weight: 400;
+    font-weight: var(--font-weight-base);
     font-size: var(--font-size-base);
-    line-height: 16px;
+    line-height: var(--line-height-base);
     color: var(--color-focus)
 }
 
@@ -175,8 +185,8 @@ body {
     margin-left: 40px;
     margin-right: auto;
     font-size: var(--font-size-min-title);
-    line-height: 20px;
-    font-weight: 500;
+    line-height: var(--line-height-link);
+    font-weight: var(--font-weight-medium);
     color: var(--text-color-black-gray)
 }
 
@@ -235,8 +245,8 @@ body {
 
 .item_nav_link {
     font-size: var(--font-size-base);
-    line-height: 16px;
-    font-weight: 400;
+    line-height: var(--line-height-base);
+    font-weight: var(--font-weight-base);
     color: var(--text-color-black-gray)
 }
 
@@ -268,8 +278,8 @@ body {
     border-radius: 10px;
     border-color: var(--color-focus);
     font-size: var(--font-size-base);
-    line-height: 16px;
-    font-weight: 400;
+    line-height: var(--line-height-base);
+    font-weight: var(--font-weight-base);
     color: var(--color-focus);
     cursor: pointer;
 }
@@ -324,13 +334,13 @@ body {
 }
     
 .title_card_special_offers {
-    font-size: var(--font-size-title);
-    font-weight: 700;
-    line-height: 40px;
-    color: var(--text-color-white);
     margin: 0;
     padding-top: 41px;
     margin-bottom: 15px;
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-title);
+    color: var(--text-color-white);
 }
 
 .title_card_special_offers_one {
@@ -340,12 +350,12 @@ body {
 
 .title_card_special_offers_big {
     margin: 0;
+    margin-bottom: 15px;
     padding-top: 214px;
     max-width: 299px;
     font-size: 60px;
     line-height: 60px;
-    font-weight: 700;
-    margin-bottom: 15px;
+    font-weight: var(--font-weight-bold);
     color: var(--text-color-white);
 }
 
@@ -353,8 +363,8 @@ body {
     margin: 0;
     margin-bottom: 46px;
     font-size: var(--font-size-min-title);
-    font-weight: 400;
-    line-height: 20px;
+    font-weight: var(--font-weight-base);
+    line-height: var(--line-height-link);
     color: var(--text-color-white);
     opacity: 0.6;
 }
@@ -364,7 +374,7 @@ body {
     margin-bottom: 45px;
     font-size: 30px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: var(--line-height-card);
     color: var(--text-color-white);
     opacity: 0.8;
 }
@@ -376,8 +386,8 @@ body {
 .link_special_off {
     margin-left: 45px;
     font-size: var(--font-size-base);
-    line-height: 16px;
-    font-weight: 400;
+    line-height: var(--line-height-base);
+    font-weight: var(--font-weight-base);
     color: var(--text-color-yellow);
 }
 
@@ -409,7 +419,7 @@ body {
     margin: 0;
     max-width: 888px;
     font-size: var(--font-size-base);
-    font-weight: 400;
+    font-weight: var(--font-weight-base);
     line-height: 32px;
 }
 
@@ -472,8 +482,8 @@ body {
 
 .link_services {
     font-size: var(--font-size-min-title);
-    font-weight: 500;
-    line-height: 40px;
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-title);
     color: var(--color-hover)
 }
 
@@ -485,7 +495,7 @@ body {
     padding-left: 45px;
     font-size: var(--font-size-base);
     line-height: 32px;
-    font-weight: 400;
+    font-weight: var(--font-weight-base);
 }
 
 /*преим*/
@@ -585,7 +595,7 @@ body {
     margin-bottom: 40px;
     padding-top: 116px;
     font-size: var(--font-size-base);
-    font-weight: 400;
+    font-weight: var(--font-weight-base);
     line-height: 32px;
 }
 
@@ -636,15 +646,15 @@ body {
 .price {
     margin: 0;
     font-size: var(--font-size-base);
-    line-height: 16px;
-    font-weight: 400;
+    line-height: var(--line-height-base);
+    font-weight: var(--font-weight-base);
     color: var(--text-color-white-gray);
 }
 
 .title_card_plecement {
     font-size: var(--font-size-base);
-    line-height: 16px;
-    font-weight: 400;
+    line-height: var(--line-height-base);
+    font-weight: var(--font-weight-base);
     max-width: 300px;
     margin: 0;
     padding: 0;
@@ -659,9 +669,9 @@ body {
 .price_text_strong {
     margin: 0;
     padding-right: 6px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     font-size: var(--font-size-min-title);
-    line-height: 20px;
+    line-height: var(--line-height-link);
 }
 
 .paragraph_plecement_card {
@@ -704,8 +714,8 @@ body {
     max-width: 300px;
     color: var(--text-color-white);
     font-size: var(--font-size-min-title);
-    font-weight: 500;
-    line-height: 40px;
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-title);
     background-position: right center;
     background-repeat: no-repeat;
     padding-right: 18px;
@@ -735,7 +745,7 @@ body {
 }
 
 .container_form {
-    width: 1170px;
+    width: var(--size-block-base);
     min-height: 256px;
     margin: 0 auto;
     border-radius: 15px;
@@ -771,15 +781,15 @@ body {
     margin: 0;
     margin-bottom: 13px;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: var(--font-weight-base);
     line-height: 12px;
 }
 
 .input_date[type=date]{
     appearance: none;
     font-size: 16px;
-    font-weight: 400px;
-    line-height: 16px;
+    font-weight: var(--font-weight-base);
+    line-height: var(--line-height-base);
     letter-spacing: 1.2px;
     width: 124px;
 }
@@ -787,8 +797,8 @@ body {
 .data_form {
     border: 0;
     font-size: var(--font-size-base);
-    font-weight: 400;
-    line-height: 16px;
+    font-weight: var(--font-weight-base);
+    line-height: var(--line-height-base);
     max-width: 140px;
     cursor: pointer;
 }
@@ -798,8 +808,8 @@ body {
     min-width: 170px;
     color: var(--text-color-black);
     font-size: var(--font-size-base);
-    line-height: 16px;
-    font-weight: 400;
+    line-height: var(--line-height-base);
+    font-weight: var(--font-weight-base);
     border: 0;
     cursor: pointer;
 }
@@ -808,8 +818,8 @@ body {
     border: 0;
     border-bottom: var(--border-gray);
     font-size: var(--font-size-base);
-    font-weight: 400;
-    line-height: 16px;
+    font-weight: var(--font-weight-base);
+    line-height: var(--line-height-base);
     width: 121px;
     cursor: pointer;
 }
@@ -841,8 +851,8 @@ body {
     display: inline-block;
     margin: 0;
     font-size: var(--font-size-min-title);
-    line-height: 20px;
-    font-weight: 700;
+    line-height: var(--line-height-link);
+    font-weight: var(--font-weight-bold);
 }
 
 .p_card_contacts {
@@ -851,7 +861,7 @@ body {
     margin: 0;
     font-size: var(--font-size-base);
     line-height: 24px;
-    font-weight: 400;
+    font-weight: var(--font-weight-base);
 }
 
 .card_numb {
@@ -884,7 +894,7 @@ body {
     color: var(--color-hover);
     font-size: var(--font-size-base);
     line-height: 24px;
-    font-weight: 400;
+    font-weight: var(--font-weight-base);
 }
 
 .number_contacts:hover {
@@ -924,7 +934,7 @@ body {
     color: var(--color-focus);
     font-size: var(--font-size-base);
     line-height: 24px;
-    font-weight: 400;
+    font-weight: var(--font-weight-base);
 }
 
 .link_contacts:hover {
@@ -942,7 +952,7 @@ body {
 .p_card_email {
     margin: 0;
     font-size: var(--font-size-base);
-    font-weight: 400;
+    font-weight: var(--font-weight-base);
     line-height: 24px;
     color: var(--text-color-white-gray);
 }
@@ -979,7 +989,7 @@ body {
 }
 
 .footer_container {
-    min-width: 1170px;
+    min-width: var(--size-block-base);
     max-height: 341px;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -1010,8 +1020,8 @@ body {
     margin: 0;
     display: inline-block;
     font-size: var(--font-size-base);
-    line-height: 30px;
-    font-weight: 400;
+    line-height: var(--line-height-card);
+    font-weight: var(--font-weight-base);
     color: var(--text-color-white);
     opacity: 0.9;
 }
